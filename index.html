@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Boneca Reborne - Landing Page</title>
+
+  <!-- Tailwind CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet" />
+
+  <!-- Animate.css -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet">
+
+  <!-- AOS CSS -->
+  <link href="https://unpkg.com/aos@next/dist/aos.css" rel="stylesheet" />
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+  <style>
+    body {
+      font-family: 'Fredoka One', cursive;
+    }
+    .btn-anim {
+      transition: all 0.3s ease-in-out;
+    }
+    .btn-anim:hover {
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+<body class="bg-pink-100 text-gray-800 overflow-x-hidden">
+
+  <!-- Hero Section -->
+  <section class="text-center py-12 px-4 bg-gradient-to-r from-pink-300 to-pink-400">
+    <h1 class="text-3xl md:text-5xl text-white mb-4" data-aos="fade-down">Bem-vindo ao universo da WATechina</h1>
+    <p class="text-lg md:text-xl text-white mb-4" data-aos="fade-up">Depois do SUS, Bolsa Família e muito mais... Agora nós, Reborne, temos landing page também, contratei a WATech!</p>
+    <p class="text-lg md:text-xl text-white mb-6" data-aos="fade-up" data-aos-delay="200">Mais do que bonecas, são emoções feitas à mão!</p>
+
+    <div class="flex justify-center" data-aos="zoom-in">
+      <img src="/static/assets/img/bebe01.png" alt="Imagem WATechina" class="w-full max-w-md rounded-lg shadow-lg border border-gray-200">
+    </div>
+
+    <a href="https://wa.me/5522999741139" class="inline-block mt-8 px-6 py-3 bg-white text-pink-500 font-bold rounded-full shadow-lg btn-anim">
+      Não fique com inveja da minha landing page, clique agora e tenha a sua também!
+    </a>
+  </section>
+
+  <!-- Player de música -->
+  <section class="bg-white py-8 px-4 sm:px-8 md:px-16">
+    <div class="max-w-lg mx-auto text-center bg-white p-4 rounded-lg shadow-lg">
+      <p class="text-lg font-semibold text-gray-700 mb-4">Curta a música enquanto navega!</p>
+      <audio id="musicPlayer" controls class="w-full">
+        <source src="static/assets/musica/musica01.mp3" type="audio/mp3">
+        Seu navegador não suporta o elemento audio.
+      </audio>
+      <div class="mt-4 flex justify-center gap-4">
+        <button id="playPauseBtn" class="bg-pink-500 text-white px-4 py-2 rounded-full hover:bg-pink-600">
+          <span id="playPauseText">Play</span>
+        </button>
+        <button id="prevTrackBtn" class="bg-blue-500 text-white px-4 py-2 rounded-full hover:bg-blue-600">
+          Anterior
+        </button>
+        <button id="nextTrackBtn" class="bg-green-500 text-white px-4 py-2 rounded-full hover:bg-green-600">
+          Próxima
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Seções de conteúdo -->
+  <section class="py-16 px-6 bg-white">
+    <div class="max-w-5xl mx-auto text-center" data-aos="fade-up">
+      <h2 class="text-3xl md:text-4xl mb-4 text-pink-500">WATechina no video game</h2>
+      <p class="mb-6">Aqui jogando video game com o meu humano, não sei como mas ele consegue perder pra mim.</p>
+      <img src="/static/assets/img/bebe02.png" alt="Família com boneca" class="mx-auto rounded-lg shadow-lg w-full max-w-md">
+    </div>
+  </section>
+
+  <section class="py-16 px-6 bg-yellow-100">
+    <div class="max-w-5xl mx-auto text-center" data-aos="fade-up">
+      <h2 class="text-3xl md:text-4xl mb-4 text-yellow-600">WAtechina lançando</h2>
+      <p class="mb-6">Depois de ganhar meu humano, ele cisma que eu tô com fome, acho que ele não bate bem não. Mas... deixo ele fingir e entro na dança.</p>
+      <img src="/static/assets/img/bebe04.png" alt="Boneca em viagem" class="mx-auto rounded-lg shadow-lg w-full max-w-md">
+    </div>
+  </section>
+
+  <section class="py-16 px-6 bg-purple-100">
+    <div class="max-w-5xl mx-auto text-center" data-aos="fade-up">
+      <h2 class="text-3xl md:text-4xl mb-4 text-purple-600">WAtechina na piscina</h2>
+      <p class="mb-6">Além da landingpage, ainda tomo banho de piscina, mas tá valendo, e você aí fugindo do frio e tomando banho só aos domingos. Kkkk.</p>
+      <img src="/static/assets/img/bebe03.png" alt="Boneca com hobbies" class="mx-auto rounded-lg shadow-lg w-full max-w-md">
+    </div>
+  </section>
+
+<!-- Call to Action -->
+<section class="text-center py-12 px-4 bg-pink-200"data-aos="fade-up">
+  <h2 class="text-2xl md:text-3xl mb-4">Não fique com inveja da WATechina não, garanta sua landingpage com a WATech</h2>
+  <a href="https://wa.me/5522999741139"
+     class="px-8 py-4 bg-blue-600 text-white font-semibold rounded-lg shadow-lg hover:bg-blue-700 focus:outline-none focus:ring-4 focus:ring-blue-400 transition-colors text-xl font-inter leading-tight shadow-xl">
+     Quero uma agora!
+  </a>
+</section>
+
+
+  <!-- Scripts -->
+  <script>
+    const playPauseBtn = document.getElementById("playPauseBtn");
+    const playPauseText = document.getElementById("playPauseText");
+    const musicPlayer = document.getElementById("musicPlayer");
+    const tracks = ["static/assets/musica/musica01.mp3"];
+    let currentTrackIndex = 0;
+
+    playPauseBtn.addEventListener("click", () => {
+      if (musicPlayer.paused) {
+        musicPlayer.play();
+        playPauseText.textContent = "Pause";
+      } else {
+        musicPlayer.pause();
+        playPauseText.textContent = "Play";
+      }
+    });
+
+    function loadTrack(index) {
+      musicPlayer.src = tracks[index];
+      musicPlayer.play();
+      playPauseText.textContent = "Pause";
+    }
+
+    document.getElementById("nextTrackBtn").addEventListener("click", () => {
+      currentTrackIndex = (currentTrackIndex + 1) % tracks.length;
+      loadTrack(currentTrackIndex);
+    });
+
+    document.getElementById("prevTrackBtn").addEventListener("click", () => {
+      currentTrackIndex = (currentTrackIndex - 1 + tracks.length) % tracks.length;
+      loadTrack(currentTrackIndex);
+    });
+
+    loadTrack(currentTrackIndex);
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({ duration: 800, once: true });
+  </script>
+
+  <!-- Footer -->
+  <footer class="bg-gradient-to-r from-blue-900 to-indigo-800 text-white py-4 px-8 text-center"data-aos="fade-up">
+    <p class="text-sm sm:text-base mb-4">
+      &copy; 2025 WATech - Todos os direitos reservados. Desenvolvido por 
+      <a href="https://github.com/WallaceMamuth" target="_blank" class="hover:text-blue-300">Wallace C Guedes</a>
+    </p>
+    <div class="flex justify-center space-x-6 mb-6">
+      <a href="https://www.facebook.com/watechevoce/" target="_blank" class="text-white hover:text-blue-300 text-3xl transition duration-300 transform hover:scale-110">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+      <a href="https://www.instagram.com/watechevoce/" target="_blank" class="text-white hover:text-blue-300 text-3xl transition duration-300 transform hover:scale-110">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a href="https://wa.me/5522999741139" target="_blank" class="text-white hover:text-blue-300 text-3xl transition duration-300 transform hover:scale-110">
+        <i class="fab fa-whatsapp"></i>
+      </a>
+    </div>
+      <p class="text-sm sm:text-base">
+      🌐 Site: <a href="https://watechevoce.com.br" target="_blank" class="text-white hover:text-blue-300">watechevoce.com.br</a>
+    </p>
+  </footer>
+
+</body>
+</html>
